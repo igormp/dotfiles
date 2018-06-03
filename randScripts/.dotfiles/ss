@@ -1,0 +1,3 @@
+#!/bin/bash
+read -r G < <(slop -f "%g")
+shotgun -g $G ~/myimage.png
