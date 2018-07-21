@@ -16,7 +16,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
-Plugin 'sjl/badwolf'
+" Plugin 'sjl/badwolf'
+Plugin 'kaicataldo/material.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'wakatime/vim-wakatime'
 "Plugin 'mkitt/tabline.vim'
@@ -115,10 +116,19 @@ nnoremap <leader><space> :nohlsearch<CR> " <\>+<space>
 set splitbelow
 set splitright
 
-colorscheme badwolf
+"colorscheme badwolf
+set background=dark
+colorscheme material
+let g:material_theme_style = 'dark'
+let g:material_terminal_italics = 1
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 
 " Make the gutters darker than the background.
-let g:badwolf_darkgutter = 1
+"let g:badwolf_darkgutter = 1
 
 set mouse=a
 
@@ -133,3 +143,4 @@ set mouse=a
 let g:airline_section_error=0   "(ycm_error_count, syntastic-err, eclim)
 let g:airline_section_warning=0 "(ycm_warning_count, syntastic-warn, whitespace)
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'material'
