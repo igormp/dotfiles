@@ -144,3 +144,6 @@ let g:airline_section_error=0   "(ycm_error_count, syntastic-err, eclim)
 let g:airline_section_warning=0 "(ycm_warning_count, syntastic-warn, whitespace)
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'material'
+
+" Ignore vim-go warnings
+let g:go_version_warning = 0
