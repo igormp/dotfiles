@@ -1,2 +1,2 @@
 #/usr/bin/bash
-xkbcomp capsfix :0
+xkbcomp ~/.dotfiles/capsfix :0
