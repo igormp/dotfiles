@@ -1,3 +1,4 @@
 #!/bin/bash
 read -r G < <(slop -f "%g")
 shotgun -g $G ~/myimage.png
+cat ~/myimage.png | xclip -selection clipboard -t image/png
