@@ -115,3 +115,11 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 alias capsfix=".dotfiles/capsfix.sh"
 alias pong="ping -c 3 google.com"
 alias ls="ls --group-directories-first"
+
+export NPM_PACKAGES="/home/igor/.npm-packages"
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
+export PATH="$NPM_PACKAGES/bin:$PATH"
+# Unset manpath so we can inherit from /etc/manpath via the `manpath`
+# command
+unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
