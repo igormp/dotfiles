@@ -17,7 +17,8 @@ Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
 " Plugin 'sjl/badwolf'
-Plugin 'kaicataldo/material.vim'
+" Plugin 'kaicataldo/material.vim'
+Plugin 'hzchirs/vim-material'
 Plugin 'vim-airline/vim-airline'
 Plugin 'wakatime/vim-wakatime'
 "Plugin 'mkitt/tabline.vim'
@@ -118,8 +119,8 @@ set splitright
 
 "colorscheme badwolf
 set background=dark
-colorscheme material
-let g:material_theme_style = 'dark'
+colorscheme vim-material
+"let g:material_theme_style = 'dark'
 let g:material_terminal_italics = 1
 
 if (has("termguicolors"))
