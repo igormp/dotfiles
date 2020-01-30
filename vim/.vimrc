@@ -148,3 +148,7 @@ let g:airline_theme = 'material'
 
 " Ignore vim-go warnings
 let g:go_version_warning = 0
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
