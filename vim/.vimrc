@@ -17,11 +17,13 @@ Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
 " Plugin 'sjl/badwolf'
-Plugin 'kaicataldo/material.vim'
+" Plugin 'kaicataldo/material.vim'
+Plugin 'hzchirs/vim-material'
 Plugin 'vim-airline/vim-airline'
 Plugin 'wakatime/vim-wakatime'
 "Plugin 'mkitt/tabline.vim'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'psf/black'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -118,8 +120,8 @@ set splitright
 
 "colorscheme badwolf
 set background=dark
-colorscheme material
-let g:material_theme_style = 'dark'
+colorscheme vim-material
+"let g:material_theme_style = 'dark'
 let g:material_terminal_italics = 1
 
 if (has("termguicolors"))
@@ -147,3 +149,7 @@ let g:airline_theme = 'material'
 
 " Ignore vim-go warnings
 let g:go_version_warning = 0
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+

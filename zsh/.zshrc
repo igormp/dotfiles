@@ -112,13 +112,13 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # Custom aliases
 
-alias capsfix=".dotfiles/capsfix.sh"
+alias capsfix="~/.dotfiles/capsfix.sh"
 alias pong="ping -c 3 google.com"
 alias ls="ls --group-directories-first"
 
 # Python pip user
-export PATH=$PATH:/home/igor/.local/bin
-export NPM_PACKAGES="/home/igor/.npm-packages"
+export PATH=$PATH:~/.local/bin
+export NPM_PACKAGES="~/.npm-packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
 export PATH="$NPM_PACKAGES/bin:$PATH"
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
