@@ -128,3 +128,5 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # Cuda binaries
 export PATH="$PATH:/opt/cuda/bin"
+
+export ANDROID_HOME=/home/igor/.android/Sdk
