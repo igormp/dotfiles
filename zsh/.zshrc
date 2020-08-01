@@ -130,3 +130,4 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export PATH="$PATH:/opt/cuda/bin"
 
 export ANDROID_HOME=/home/igor/.android/Sdk
+export GPG_TTY=$(tty)
