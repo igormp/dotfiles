@@ -4,12 +4,12 @@
 export PATH=~/.npm-global/bin:$PATH
 
 # markdown preview
-export BROWSER=firefox
+#export BROWSER=firefox
 
 # wine 32 bits
 
-export WINEPREFIX=$HOME/.wine32/
-export WINEARCH=win32
+#export WINEPREFIX=$HOME/.wine32/
+#export WINEARCH=win32
 
 # gopath
 export GOPATH=$HOME/.go
