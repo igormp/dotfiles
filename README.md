@@ -5,7 +5,7 @@ To do so, just clone this repo into your home folder, and type `stow $foldername
 
 ## zsh
 
-Remeber to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
+Remeber to install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [imp](https://github.com/igormp/imp).
 
 ## vim
 
