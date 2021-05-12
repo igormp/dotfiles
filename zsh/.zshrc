@@ -114,7 +114,7 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 alias capsfix="~/.dotfiles/capsfix.sh"
 alias pong="ping -c 3 google.com"
-alias ls="ls --group-directories-first"
+alias ls="ls --group-directories-first --color=auto"
 alias ifood="~/.dotfiles/setup_ifood.sh"
 
 # Python pip user
