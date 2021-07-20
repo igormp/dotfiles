@@ -88,7 +88,7 @@ source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
 
 # nodejs global path
-export PATH=~/.npm-global/bin:$PATH
+#export PATH=~/.npm-global/bin:$PATH
 
 # markdown preview
 export BROWSER=google-chrome-stable
@@ -119,9 +119,9 @@ alias ifood="~/.dotfiles/setup_ifood.sh"
 
 # Python pip user
 export PATH=$PATH:~/.local/bin
-export NPM_PACKAGES="~/.npm-packages"
-export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
-export PATH="$NPM_PACKAGES/bin:$PATH"
+#export NPM_PACKAGES="~/.npm-packages"
+#export NODE_PATH="$NPM_PACKAGES/lib/node_modules${NODE_PATH:+:$NODE_PATH}"
+#export PATH="$NPM_PACKAGES/bin:$PATH"
 # Unset manpath so we can inherit from /etc/manpath via the `manpath`
 # command
 unset MANPATH  # delete if you already modified MANPATH elsewhere in your config
