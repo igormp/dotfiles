@@ -132,3 +132,8 @@ export PATH="$PATH:/opt/cuda/bin"
 
 export ANDROID_HOME=/home/igor/.android/Sdk
 export GPG_TTY=$(tty)
+
+# pyspark with jupyter
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+
