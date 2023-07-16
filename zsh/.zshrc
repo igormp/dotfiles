@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions archlinux git-extras sublime sudo battery)
+plugins=(git zsh-autosuggestions archlinux git-extras sublime sudo battery virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,7 +114,7 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 alias capsfix="~/.dotfiles/capsfix.sh"
 alias pong="ping -c 3 google.com"
-alias ls="ls --group-directories-first --color=auto"
+alias ls="ls --color=auto"
 alias ifood="~/.dotfiles/setup_ifood.sh"
 
 # Python pip user
@@ -137,3 +137,14 @@ export GPG_TTY=$(tty)
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/igor/Documents/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/igor/Documents/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/igor/Documents/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/igor/Documents/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Pyenv stuff
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
