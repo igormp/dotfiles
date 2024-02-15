@@ -338,3 +338,6 @@ tags
 # Ignore all local history of files
 .history
 .ionide
+
+# Dev scrap folder inside projects
+dev_scrap/
